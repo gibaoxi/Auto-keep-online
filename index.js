@@ -17,8 +17,7 @@ const urls = [
   'https://yyb11-tox9w6as.b4a.run',
   'https://yyba.zeabur.app',
   'https://yyb2.zeabur.app',
-  'https://yyb.zeabur.app',
-  'http://www.pushplus.plus/send?token=c204e4622c9f4e3e8bf06591c7f6e89d&title=wq&content=%E5%93%88%E5%93%88'
+  'https://yyb.zeabur.app'
   // 添加更多24小时不间断访问的URL'', 
 ];
 
