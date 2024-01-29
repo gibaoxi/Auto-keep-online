@@ -6,15 +6,19 @@ const moment = require('moment-timezone');
 
 // 添加24小时访问的URL数组
 const urls = [
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  'https://www.baidu.com',             // 此处可备注名称，例如：glitch
-  'https://www.yahoo.com',             // 此处可备注名称，例如：glitch
-  // 添加更多24小时不间断访问的URL
+  'https://yyby.glitch.me',             // 此处可备注名称，例如：glitch
+  'https://yyb1.glitch.me',             // 此处可备注名称，例如：glitch
+  'https://yyb.onrender.com/',             // 此处可备注名称，例如：glitch
+  'https://yybus.onrender.com',             // 此处可备注名称，例如：glitch
+  'https://https://yyb1.onrender.com',             // 此处可备注名称，例如：glitch
+  'https://3624tj-3000.csb.app',             // 此处可备注名称，例如：glitch
+  'https://zksr8w-3000.csb.app',             // 此处可备注名称，例如：glitch
+  'https://yyb3-uan1nf25.b4a.run/',             // 此处可备注名称，例如：glitch
+  'https://yyb11-tox9w6as.b4a.run', 
+  'https://yyba.zeabur.app',
+  'https://yyb2.zeabur.app',
+  'https://yyb.zeabur.app'
+  // 添加更多24小时不间断访问的URL'', 
 ];
 
 // 添加在01:00至05:00暂停访问，其他时间正常访问的URL数组
@@ -61,14 +65,14 @@ function startVisits() {
 // visitWebsites();
   visitIntervalId = setInterval(() => {
     visitWebsites();
-  }, 2 * 60 * 1000);   // 每2分钟执行一次访问
+  }, 10 * 60 * 1000);   // 每2分钟执行一次访问
 }
 
 function runScript() {
   const runScriptIntervalId = setInterval(() => {
     //console.log('Running script');
     checkAndSetTimer();
-  }, 2 * 60 * 1000); // 每2分钟检查一次
+  }, 10 * 60 * 1000); // 每2分钟检查一次
 }
 checkAndSetTimer();
 runScript();
@@ -83,7 +87,7 @@ async function scrapeAndLog(url) {
   }
 }
 // 每2分钟访问一次
-cron.schedule('*/2 * * * *', () => {
+cron.schedule('*/5 * * * *', () => {
   console.log('Running webpage access...');
   urls.forEach((url) => {
     scrapeAndLog(url);
