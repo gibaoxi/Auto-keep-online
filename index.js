@@ -65,14 +65,14 @@ function startVisits() {
 // visitWebsites();
   visitIntervalId = setInterval(() => {
     visitWebsites();
-  }, 10 * 60 * 1000);   // 每2分钟执行一次访问
+  }, 5 * 60 * 1000);   // 每2分钟执行一次访问
 }
 
 function runScript() {
   const runScriptIntervalId = setInterval(() => {
     //console.log('Running script');
     checkAndSetTimer();
-  }, 10 * 60 * 1000); // 每2分钟检查一次
+  }, 5 * 60 * 1000); // 每2分钟检查一次
 }
 checkAndSetTimer();
 runScript();
