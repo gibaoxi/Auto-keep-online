@@ -4,7 +4,6 @@ const cron = require('node-cron');
 const port = process.env.PORT || 7860;     
 const moment = require('moment-timezone');
 
-// 添加24小时访问的URL数组
 const urls = [
   'https://yyby.glitch.me',             // 此处可备注名称，例如：glitch
   'https://yyb1.glitch.me',             // 此处可备注名称，例如：glitch
@@ -21,10 +20,10 @@ const urls = [
   // 添加更多24小时不间断访问的URL'', 
 ];
 
-// 添加在01:00至05:00暂停访问，其他时间正常访问的URL数组
+
 function visitWebsites() {
   const websites = [
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
+    'http://www.pushplus.plus/send?token=c204e4622c9f4e3e8bf06591c7f6e89d&title=live&content=zea',        // 此处可备注名称，例如：Back4app
     'https://www.google.com',        // 此处可备注名称，例如：Back4app
     'https://www.google.com',        // 此处可备注名称，例如：Back4app
     'https://www.google.com'         // 此处可备注名称，例如：Back4app，最后一个url后面没有逗号
@@ -65,14 +64,14 @@ function startVisits() {
 // visitWebsites();
   visitIntervalId = setInterval(() => {
     visitWebsites();
-  }, 5 * 60 * 1000);   // 每2分钟执行一次访问
+  }, 60 * 60 * 1000);   // 每2分钟执行一次访问
 }
 
 function runScript() {
   const runScriptIntervalId = setInterval(() => {
     //console.log('Running script');
     checkAndSetTimer();
-  }, 5 * 60 * 1000); // 每2分钟检查一次
+  }, 60 * 60 * 1000); // 每2分钟检查一次
 }
 checkAndSetTimer();
 runScript();
