@@ -10,23 +10,16 @@ const urls = [
   'https://yyb.onrender.com/',             // 此处可备注名称，例如：glitch
   'https://yybus.onrender.com',             // 此处可备注名称，例如：glitch
   'https://https://yyb1.onrender.com',             // 此处可备注名称，例如：glitch
-  'https://3624tj-3000.csb.app',             // 此处可备注名称，例如：glitch
-  'https://zksr8w-3000.csb.app',            // 此处可备注名称，例如：glitch
-  'https://yyb3-uan1nf25.b4a.run/',            // 此处可备注名称，例如：glitch
-  'https://yyb11-tox9w6as.b4a.run',
-  'https://yyba.zeabur.app',
-  'https://yyb2.zeabur.app',
-  'https://yyb.zeabur.app'
+  'https://https://fymjvf-3000.csb.app',// 此处可备注名称，例如：glit
+  'https://yyb3-uan1nf25.b4a.run/',            // 此处可备注名称，例如：glitc
+  'https://yyb11-tox9w6as.b4a.run'
   // 添加更多24小时不间断访问的URL'', 
 ];
 
 
 function visitWebsites() {
   const websites = [
-    'http://www.pushplus.plus/send?token=c204e4622c9f4e3e8bf06591c7f6e89d&title=live&content=zea',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com',        // 此处可备注名称，例如：Back4app
-    'https://www.google.com'         // 此处可备注名称，例如：Back4app，最后一个url后面没有逗号
+    'http://www.pushplus.plus/send?token=c204e4622c9f4e3e8bf06591c7f6e89d&title=live&content=zea',        
     //添加更多的指定时间访问的URL
   ];
 
