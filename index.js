@@ -11,7 +11,8 @@ const urls = [
   'https://https://yyb1.onrender.com',             // 此处可备注名称，例如：glitch
   //'https://https://fymjvf-3000.csb.app',// 此处可备注名称，例如：glit
   //'https://yyb3-uan1nf25.b4a.run/',            // 此处可备注名称，例如：glitc
-  'https://yyb11-tox9w6as.b4a.run'
+  'https://yyb11-tox9w6as.b4a.run',
+  'https://53724-3000.4.codesphere.com/',
   // 添加更多24小时不间断访问的URL'', 
 ];
 
